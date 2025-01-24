@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Acorn';
+    src: url('../fonts/acorn/Acorn/Acorn-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+h2,h1{
+    font-family: 'Acorn', sans-serif;;
+}
+.retrato{
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+}
+video{
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.presentacion {
+    background-color: #ffffffa6;
+    height: 100%;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: transform 0.1s ease;
+}

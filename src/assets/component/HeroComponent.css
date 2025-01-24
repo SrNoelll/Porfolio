@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Acorn';
+    src: url('../fonts/acorn/Acorn/Acorn-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+.hero {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #10536b;
+}
+.hero h1 {
+    justify-content: center;
+    font-family: 'Acorn', sans-serif;
+    font-size: 6vw;
+}
+.hero p {
+    text-align: center;
+}
+.arriba,.abajo{
+    border-radius: 50%;
+    height: 5vw;
+    min-height: 60px;
+    
+}
+.arriba{
+    margin-right: 75vw;
+    animation: levitacionAbajo 2s ease-in-out infinite;
+}
+.abajo{
+    margin-left: 75vw;
+    animation: levitacionArriba 2s ease-in-out infinite;
+}
+@keyframes levitacionAbajo {
+    0%, 100% {
+        transform: translateY(0); /* Punto más alto */
+    }
+    50% {
+        transform: translateY(20px); /* Punto más bajo */
+    }
+}
+@keyframes levitacionArriba {
+    0%, 100% {
+        transform: translateY(20px); /* Punto más alto */
+    }
+    50% {
+        transform: translateY(0); /* Punto más bajo */
+    }
+}

@@ -1,0 +1,30 @@
+footer{
+    color: #8dd3ec;
+    background-color: #10536b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer a{
+    color: #8dd3ec;
+}
+footer .bemail {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #8dd3ec;
+    text-decoration: none;
+    color: #8dd3ec;
+    transition: all 0.1s ease-out;
+}
+
+footer .bemail:hover {
+    background-color: #8dd3ec;
+    color: #10536b;
+}
+.line{
+    height: 2px;
+    background-color: #8dd3ec;
+}
+footer svg {
+    font-size: 2rem;
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Acorn';
+    src: url('../fonts/acorn/Acorn/Acorn-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+.icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-container svg {
+    font-size: 3rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-name {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    color: #10536b;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-container:hover svg {
+    opacity: 0;
+  }
+  
+  .icon-container:hover .icon-name {
+    opacity: 1;
+  }
+  
+.abilidades{
+    margin-top: 50px;
+    color: #10536b;
+    align-items: center;
+}
+.abilidades h1{
+    font-family: 'Acorn', sans-serif;
+    font-size: 6vw;
+    padding: 30px;
+
+}
+.abilidades svg{
+  margin-bottom: 20px;
+  color: #10536b;
+}
