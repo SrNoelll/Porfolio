@@ -1,6 +1,5 @@
 import "./SobreMiComponent.css";
 import retrato from "../images/fotoCurFin.png";
-import vid from "../images/teclado.mp4";
 import BurbujaComponent from "./BurbujaComponent";
 
 const SobreMiComponent = () => {
@@ -8,15 +7,15 @@ const SobreMiComponent = () => {
     <div className="container p-4 my-4">
       <h1>Hi, I am Noel</h1>
       <div className="row d-flex align-items-center">
-        <div className="col-3 text-center">
+        <div className="col-lg-3 col-md-3 col-sm-12 col-12 text-center">
           <img className="retrato img-fluid" src={retrato} alt="mi foto" />
         </div>
-        <div className="col-4 text-center">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
           <div className="my-3">
             <BurbujaComponent />
           </div>
         </div>
-        <div className="col-5 row text-center">
+        <div className="col-lg-5 col-md-5 col-sm-12 row text-center">
           <div className="sketchfab-embed-wrapper">
             {" "}
             <iframe

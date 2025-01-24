@@ -12,3 +12,14 @@
         transform: translateY(20px);
     }
 }
+@media (max-width: 768px) { /* Para pantallas pequeñas */
+    .flotar {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) { /* Para pantallas muy pequeñas */
+    .flotar {
+        display: none;
+    }
+}

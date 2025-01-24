@@ -5,7 +5,7 @@ const CVComponent = () => {
   return (
     <div className='my-5 container'>
         <div className='row'>
-            <iframe className='cv col-12' src={cv} frameborder="0"></iframe>
+            <iframe className='cv col-12' src={cv}></iframe>
         </div>
       
     </div>

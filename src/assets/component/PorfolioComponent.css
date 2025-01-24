@@ -1,25 +1,40 @@
-.derecha{
+.derecha, .izquierda {
     height: 300px;
     border-radius: 15px;
-    transform: perspective(600px) rotateY(30deg) rotateX(0); /* Ajuste de perspectiva y ángulos */
     transform-origin: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8); /* Sombra para el efecto flotante */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 100%;
+    max-width: 100%;
 }
-.derecha:hover{
-    transform: perspective(600px) rotateY(0deg) rotateX(0deg); /* Vuelve a la posición normal al pasar el ratón */
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 1); /* Aumenta la sombra para el efecto interactivo */
+
+.derecha {
+    transform: perspective(600px) rotateY(30deg) rotateX(0);
 }
+
+.derecha:hover {
+    transform: perspective(600px) rotateY(0deg) rotateX(0deg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+}
+
 .izquierda {
-    height: 300px;
-    border-radius: 15px;
-    transform: perspective(600px) rotateY(-30deg) rotateX(0); /* Ajuste de perspectiva y ángulos */
-    transform-origin: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8); /* Sombra para el efecto flotante */
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: perspective(600px) rotateY(-30deg) rotateX(0);
 }
 
 .izquierda:hover {
-    transform: perspective(600px) rotateY(0deg) rotateX(0deg); /* Vuelve a la posición normal al pasar el ratón */
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 1); /* Aumenta la sombra para el efecto interactivo */
+    transform: perspective(600px) rotateY(0deg) rotateX(0deg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 768px) {
+    .derecha, .izquierda {
+        height: auto;
+        transform: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .derecha:hover, .izquierda:hover {
+        transform: none;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    }
 }

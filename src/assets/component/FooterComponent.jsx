@@ -14,7 +14,7 @@ const FooterComponent = () => {
                 <div className="row text-center">
                     <div className="col-lg-4 my-3">noelalarconpuerta@gmail.com</div>
                     <div className="col-lg-4 my-3">
-                        <a className="my-3 bemail" href="mailto:noelalarconpuerta@gmail.com?subject=Professional%20Inquiry%20from%20My%20Portfolio&body=Write%20your%20message%20here" class="email-button">
+                        <a id="bemail" className="my-3 bemail" href="mailto:noelalarconpuerta@gmail.com?subject=Professional%20Inquiry%20from%20My%20Portfolio&body=Write%20your%20message%20here" class="email-button">
                             Send email
                         </a>
                     </div>
